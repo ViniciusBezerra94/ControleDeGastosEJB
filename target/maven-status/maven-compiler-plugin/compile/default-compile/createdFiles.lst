@@ -1,0 +1,7 @@
+br/com/controledegastos/entity/Gastos.class
+br/com/controledegastos/entity/EntidadeBase.class
+br/com/controledegastos/ejb/GastosRemote.class
+br/com/controledegastos/ejb/GastosBean.class
+br/com/controledegastos/entity/Gastos_.class
+br/com/controledegastos/dao/GenericoDAO.class
+br/com/controledegastos/dao/GastosDAO.class
