@@ -6,6 +6,8 @@
 package br.com.controledegastos.ejb;
 
 import br.com.controledegastos.entity.Gastos;
+import java.util.Date;
+import java.util.List;
 import javax.ejb.Remote;
 
 /**
@@ -20,4 +22,10 @@ public interface GastosRemote {
     public Gastos consultarPorId(Long id);
 
     public void remover(Long id);
+
+    public List<Gastos> buscarTodosGastos();
+
+    public List<Gastos> buscarEntreDatas(Date ini, Date fim);
+    
+    
 }

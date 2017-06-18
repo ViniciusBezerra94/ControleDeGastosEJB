@@ -7,6 +7,8 @@ package br.com.controledegastos.ejb;
 
 import br.com.controledegastos.dao.GastosDAO;
 import br.com.controledegastos.entity.Gastos;
+import java.util.Date;
+import java.util.List;
 import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
@@ -40,5 +42,17 @@ public class GastosBean implements GastosRemote {
         GastosDAO dao = new GastosDAO(em);
         dao.remover(Gastos.class, id);
 
+    }
+
+    @Override
+    public List<Gastos> buscarTodosGastos() {
+        GastosDAO dao = new GastosDAO(em);
+        return dao.buscarTodosGastos();
+    }
+
+    @Override
+    public List<Gastos> buscarEntreDatas(Date ini, Date fim) {
+        GastosDAO dao = new GastosDAO(em);
+        return dao.buscarEntreDatas(ini, fim);
     }
 }

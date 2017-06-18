@@ -11,6 +11,8 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.NamedQueries;
+import javax.persistence.NamedQuery;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
@@ -20,6 +22,11 @@ import javax.persistence.TemporalType;
  */
 
 @Entity
+
+@NamedQueries({
+    @NamedQuery(name = "gastos.buscarTodosGastos", query = "select g from Gastos g "),
+    @NamedQuery(name = "gastos.buscarGastosEntreDatas", query = "select g from Gastos g where g.data BETWEEN :data1 and :data2")
+})
 public class Gastos implements Serializable,EntidadeBase {
     private static final long serialVersionUID = 546546L;
     

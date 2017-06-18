@@ -1,6 +1,6 @@
-/home/vinicius/NetBeansProjects/ControleEJB/src/main/java/br/com/controledegastos/entity/EntidadeBase.java
-/home/vinicius/NetBeansProjects/ControleEJB/src/main/java/br/com/controledegastos/entity/Gastos.java
-/home/vinicius/NetBeansProjects/ControleEJB/src/main/java/br/com/controledegastos/dao/GenericoDAO.java
-/home/vinicius/NetBeansProjects/ControleEJB/src/main/java/br/com/controledegastos/ejb/GastosRemote.java
-/home/vinicius/NetBeansProjects/ControleEJB/src/main/java/br/com/controledegastos/ejb/GastosBean.java
-/home/vinicius/NetBeansProjects/ControleEJB/src/main/java/br/com/controledegastos/dao/GastosDAO.java
+/home/vinicius/GitHub/ControleDeGastosEJB/src/main/java/br/com/controledegastos/dao/GenericoDAO.java
+/home/vinicius/GitHub/ControleDeGastosEJB/src/main/java/br/com/controledegastos/entity/EntidadeBase.java
+/home/vinicius/GitHub/ControleDeGastosEJB/src/main/java/br/com/controledegastos/ejb/GastosRemote.java
+/home/vinicius/GitHub/ControleDeGastosEJB/src/main/java/br/com/controledegastos/entity/Gastos.java
+/home/vinicius/GitHub/ControleDeGastosEJB/src/main/java/br/com/controledegastos/ejb/GastosBean.java
+/home/vinicius/GitHub/ControleDeGastosEJB/src/main/java/br/com/controledegastos/dao/GastosDAO.java

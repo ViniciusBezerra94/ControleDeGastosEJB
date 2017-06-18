@@ -6,7 +6,10 @@
 package br.com.controledegastos.dao;
 
 import br.com.controledegastos.entity.Gastos;
+import java.util.Date;
+import java.util.List;
 import javax.persistence.EntityManager;
+import javax.persistence.Query;
 
 /**
  *
@@ -14,8 +17,24 @@ import javax.persistence.EntityManager;
  */
 public class GastosDAO extends GenericoDAO<Gastos>{
     
+    private EntityManager etm;
+    
     public GastosDAO(EntityManager em) {
         super(em);
+        etm = em;
+    }
+    
+    public List<Gastos> buscarTodosGastos(){
+        Query q = etm.createNamedQuery("gastos.buscarTodosGastos");
+        return q.getResultList();
+    }
+    
+    
+    public List<Gastos> buscarEntreDatas(Date ini, Date fim){
+        Query q = etm.createNamedQuery("gastos.buscarGastosEntreDatas");
+        q.setParameter("data1", ini);
+        q.setParameter("data2", fim);
+        return q.getResultList();
     }
     
     
